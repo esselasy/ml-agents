@@ -405,9 +405,6 @@ public override void AgentAction(float[] vectorAction, string textAction)
 1. RollerAgent.cs에 있는 모든 `this.transform.position` 참조를 `this.transform.localPosition`으로 바꿉니다.
 2. RollerAgent.cs에 있는 모든 `Target.position` 참조를 `Target.localPosition`으로 바꿉니다.
 
-This is only one way to achieve this objective. Refer to the 
-[example environments](Learning-Environment-Examples.md) for other ways we can achieve relative positioning.
-
 이것은 목표를 달성하는 한 가지 방법일 뿐입니다. 상대적 포지셔닝을 사용할 수 있는 다른 방법은 [예시 환경]((Learning-Environment-Examples.md)을 참조하십시오.
 
 ## 검토: 씬 레이아웃
