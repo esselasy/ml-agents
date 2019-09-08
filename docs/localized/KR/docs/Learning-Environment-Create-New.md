@@ -337,7 +337,7 @@ public override void AgentAction(float[] vectorAction, string textAction)
 
 훈련을 시작하기 전에 항상 수동으로 환경을 테스트하는 것이 좋습니다. `RollerBallPlayer` 브레인을 만든 이유는 직접 키보드를 사용하여 에이전트를 제어할 수 있기 때문입니다. 먼저 키보드와 동작 간의 매핑을 정의해야 합니다. RollerAgent는 `Action Size`가 두 개이지만 한 키에는 양수 값을 지정하고 한 키에는 음수 값을 지정하는 식으로 하면 총 4 개의 키를 사용할 수 있습니다.
 
-1. RollerBallPlayer자산을 선택하여 속성을 속성에서 봅니다.
+1. RollerBallPlayer 에셋을 선택하여 인스펙터 창에서 속성을 봅니다.
 2. **Key Continuous Player Actions**를 확장합니다. (`PlayerBrain`을 사용할 때만 표시됩니다.)
 3. **Size**를 4로 설정합니다.
 4. 다음과 같이 매핑을 설정합니다.
@@ -372,11 +372,7 @@ public override void AgentAction(float[] vectorAction, string textAction)
 
     mlagents-learn config/config.yaml --run-id=RollerBall-1 --train
 
-(여기서 `config.yaml`은 수정된 `batch_size` 및 `buffer_size` 하이퍼파라미터를 가지고 있는 `trainer_config.yaml`의 복사본입니다.)
-
-**Note:** If you get a `command not found` error when running this command,  make sure 
-that you have followed the *Install Python and mlagents Package* section of the 
-ML-Agents [Installation](Installation.md) instructions.
+(여기서 `config.yaml`은 수정된 `batch_size` 및 `buffer_size` 하이퍼파라미터를 가지고 있는 `trainer_config.yaml`의 복사본입니다.)`
 
 **참고:** 명령을 실행할 때 `command not found`이 오류가 발생하면, ML-Agents [설치](Installation.md)에 있는 *파이썬과 mlagents 패키지 설치* 과정을 따랐는지 확인합니다.
 
