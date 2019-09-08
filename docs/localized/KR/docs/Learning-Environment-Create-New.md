@@ -424,3 +424,6 @@ This is only one way to achieve this objective. Refer to the
 
 한 씬에는 하나의 아카데미 게임 오브젝트만 있을 수 있습니다.
 아카데미의 Broadcast Hub 목록에 추가된 학습 브레인만 훈련할 수 있습니다.
+
+## 한글 번역
+이 문서의 한글 번역은 [사이안](https://github.com/esselasy)에 의해 진행되었습니다. 내용상 오류나 오탈자가 있는 경우 링크를 통해 연락주시면 감사드리겠습니다.
