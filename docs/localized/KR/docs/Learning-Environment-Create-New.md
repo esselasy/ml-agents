@@ -41,7 +41,7 @@
 ### 바닥 평면 생성
 
 1. 계층 창에서 마우스 오른쪽 버튼을 클릭하고 3D Object > Plane을 선택합니다.
-2. GameObject의 이름을 "Floor"로 지정합니다.
+2. 게임 오브젝트의 이름을 "Floor"로 지정합니다.
 3. Floor 평면을 선택해서 인스펙터 창에서 속성을 봅니다.
 4. Transform의 Position = (0, 0, 0), Rotation = (0, 0, 0), Scale = (1, 1, 1)로 설정합니다.
 5. Mesh Renderer의 Materials 속성을 확장하고 *Default-Material*을 *LightGridFloorSquare* (또는 원하는 적합한 재질)로 변경합니다.
@@ -53,7 +53,7 @@
 ### 대상 큐브 추가
 
 1. 계층 창에서 마우스 오른쪽 버튼을 클릭하고 3D Object > Cube를 선택합니다.
-2. GameObject 이름을 "Target"으로 지정합니다.
+2. 게임 오브젝트의 이름을 "Target"으로 지정합니다.
 3. Target 큐브를 선택해서 인스펙터 창에서 속성을 봅니다.
 4. Transform의 Position = (3, 0.5, 3), Rotation = (0, 0, 0), Scale = (1, 1, 1)로 설정합니다.
 5. Mesh Renderer의 Materials 속성을 확장하고 *Default-Material*을 *Block*으로 변경합니다.
@@ -63,7 +63,7 @@
 ### 에이전트 구 추가
 
 1. 계층 창에서 마우스 오른쪽 버튼을 클릭하고 3D Object > Sphere를 선택합니다.
-2. GameObject의 이름을 "RollerAgent"로 지정합니다.
+2. 게임 오브젝트의 이름을 "RollerAgent"로 지정합니다.
 3. RollerAgent 구를 선택해서 인스펙터 창에서 속성을 봅니다.
 4. Transform의 Position = (0, 0.5, 0), Rotation = (0, 0, 0), Scale = (1, 1, 1)로 설정합니다.
 5. Mesh Renderer의 Materials 속성을 확장하고 *Default-Material*을 *CheckerSquare*로 변경합니다.
@@ -72,12 +72,12 @@
 
 ![The Agent GameObject in the Inspector window](images/mlagents-NewTutSphere.png)
 
-이 튜토리얼의 뒷부분에서 이 GameObject에 컴포넌트로 추가할 에이전트 서브 클래스를 만들게 됩니다.
+이 튜토리얼의 뒷부분에서 이 게임 오브젝트에 컴포넌트로 추가할 에이전트 서브 클래스를 만들게 됩니다.
 
 ### 아카데미용 빈 게임 오브젝트 추가
 
 1. 계층 창에서 마우스 오른쪽 단추를 클릭하고 Create Empty를 선택합니다.
-2. GameObject의 이름을 "Academy"로 지정합니다.
+2. 게임 오브젝트의 이름을 "Academy"로 지정합니다.
 
 ![The scene hierarchy](images/mlagents-NewTutHierarchy.png)
 
@@ -87,9 +87,9 @@
 
 아카데미는 씬에서 ML-Agents를 조정하고 반복 시뮬레이션에서 의사 결정 부분을 주도합니다. 모든 ML-Agent 씬에는 하나의 아카데미 인스턴스가 필요합니다. 베이스 Academy 클래스는 추상 클래스이기 때문에 특정 환경에서 어떤 메소드도 사용할 필요가 없는 경우에도 자신만의 서브 클래스를 만들어야 합니다.
 
-먼저 앞에서 만든 Academy GameObject에 새 스크립트 컴포넌트를 추가합니다:
+먼저 앞에서 만든 Academy 게임 오브젝트에 새 스크립트 컴포넌트를 추가합니다:
 
-1. Academy GameObject를 선택하여 인스펙터 창에서 봅니다.
+1. Academy 게임 오브젝트를 선택하여 인스펙터 창에서 봅니다.
 2. **Add Component**를 클릭합니다.
 3. 컴포넌트 목록에서 맨 아래에 있는 **New Script**를 클릭합니다.
 4. 스크립트 이름을 "RollerAcademy"로 지정합니다.
@@ -130,7 +130,7 @@ public class RollerAcademy : Academy { }
 
 에이전트를 작성하려면:
 
-1. RollerAgent GameObject를 선택하여 인스펙터 창에서 봅니다.
+1. RollerAgent 게임 오브젝트를 선택하여 인스펙터 창에서 봅니다.
 2. **Add Component**를 클릭합니다.
 3. 컴포넌트 목록에서 맨 아래에 있는 **New Script**를 클릭합니다.
 4. 스크립트 이름을 "RollerAgent"로 지정합니다.

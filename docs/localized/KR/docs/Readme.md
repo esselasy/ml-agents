@@ -4,12 +4,12 @@
 
 * [설치](Installation.md)
   * [예비 지식 : 주피터 노트북(Jupyter Notebooks)](Background-Jupyter.md)
-  * [도커 설정](Using-Docker.md)
-* [기초 가이드](Basic-Guide.md)
+  * [도커 사용법](Using-Docker.md)
+* [기본 가이드](Basic-Guide.md)
 
 ## 시작하기
 
-* [ML-Agent 툴킷 개요](ML-Agents-Overview.md)
+* [ML-Agents 툴킷 개요](ML-Agents-Overview.md)
   * [예비 지식 : 유니티(Unity)](Background-Unity.md)
   * [예비 지식 : 머신 러닝](Background-Machine-Learning.md)
   * [예비 지식 : 텐서플로(Tensorflow)](Background-TensorFlow.md)
@@ -51,7 +51,7 @@
 
 ## 도움말
 
-* [이전 버전의 ML-Agent에서 마이그레이션](Migrating.md)
+* [이전 버전의 ML-Agents에서 마이그레이션](Migrating.md)
 * [자주 묻는 질문](FAQ.md)
 * [ML-Agents 용어집](Glossary.md)
 * [제한 사항](Limitations.md)
